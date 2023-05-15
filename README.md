@@ -292,3 +292,77 @@ nothing to commit, working tree clean
 pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (dev)
 $
 ```
+## Bundle 2
+## Exercise 1
+
+```bash
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+        modified:   home.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$ git add --all
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   about.html
+        modified:   home.html
+        new file:   services.html
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$ git commit -m "added changes at bundle-2 exercise-1"
+[ft/bundle-2 1f1d341] added changes at bundle-2 exercise-1
+ 3 files changed, 14 insertions(+)
+ create mode 100644 services.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$  git push --set-upstream origin ft/bundle-2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 550 bytes | 110.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/blaisetjoe/Bundle-1/pull/new/ft/bundle-2
+remote:
+To https://github.com/blaisetjoe/Bundle-1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/bundle-2)
+$
+```

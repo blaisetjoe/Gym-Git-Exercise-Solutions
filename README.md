@@ -639,3 +639,749 @@ nothing to commit, working tree clean
 pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (main)
 $
 ```
+## Bunlde 3
+### Exercise 1
+
+```bash
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git status
+On branch ft/team-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git add team.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git commit -m "added team page"
+[ft/team-page d2bb990] added team page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 2.11 KiB | 45.00 KiB/s, done.
+Total 16 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/blaisetjoe/Bundle-1/pull/new/ft/team-page
+remote:
+To https://github.com/blaisetjoe/Bundle-1.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git log
+commit d2bb99038a7c998a20b247c07fcaafdb23c11366 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 09:40:46 2023 +0200
+
+    added team page
+
+commit f46e164294fe7b0c66eff7061a32c385977483f3 (origin/main, main, ft/contact-page)
+Merge: e6cb009 fa2819e
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:38:53 2023 +0200
+
+    Merge branch 'ft/service-redesign'
+
+commit e6cb009c515c62829a015038a6ff7ab484bb6b4f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:30:12 2023 +0200
+
+    added other changes to services
+
+commit fa2819ee422d5a4d39affefcd901cc20ad0b58d0 (origin/ft/service-redesign, ft/service-redesign)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:18:33 2023 +0200
+
+    added changes to services html
+
+commit 48f53360a97856da589ffd4598e88dcf2a736b4f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:10:39 2023 +0200
+
+    added changes to services page
+
+commit db23dc055cc0a59c80e4345933603f5eed8cc410
+commit db23dc055cc0a59c80e4345933603f5eed8cc410
+commit d2bb99038a7c998a20b247c07fcaafdb23c11366 (HEAD -> ft/team-page,
+ origin/ft/team-page)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 09:40:46 2023 +0200
+
+    added team page
+
+commit f46e164294fe7b0c66eff7061a32c385977483f3 (origin/main, main, ft
+/contact-page)
+Merge: e6cb009 fa2819e
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:38:53 2023 +0200
+
+    Merge branch 'ft/service-redesign'
+
+commit e6cb009c515c62829a015038a6ff7ab484bb6b4f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:30:12 2023 +0200
+
+    added other changes to services
+
+commit fa2819ee422d5a4d39affefcd901cc20ad0b58d0 (origin/ft/service-red
+esign, ft/service-redesign)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:18:33 2023 +0200
+
+    added changes to services html
+
+commit 48f53360a97856da589ffd4598e88dcf2a736b4f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:10:39 2023 +0200
+
+    added changes to services page
+
+commit db23dc055cc0a59c80e4345933603f5eed8cc410
+Merge: 62c4374 1f1d341
+Author: Annette <74765874+Annette-Bwemere-Salama@users.noreply.github.com>
+Date:   Mon May 15 12:00:53 2023 +0200
+
+    Merge pull request #1 from blaisetjoe/ft/bundle-2
+
+    added changes to project and created new
+
+commit 1f1d34183d34afbf718100989e922510845be860 (origin/ft/bundle-2, ft/bundle-2)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:53:23 2023 +0200
+
+    added changes at bundle-2 exercise-1
+
+commit 89133d819551ec15e36f60062766f42c6a61d5d3 (origin/dev, dev)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:34:30 2023 +0200
+
+    updated home and about pages
+
+commit 62c437434dec0621b0c74d24d31071f36a2ebc11
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:18:48 2023 +0200
+
+    added changes to readme
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git cherry-pick d2bb99038a7c998a20b247c07fcaafdb23c11366
+[ft/contact-page 4f24979] added team page
+ Date: Tue May 16 09:40:46 2023 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git git status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git status
+On branch ft/contact-page
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git add team.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git commit -m "added changes on contact>team page"
+[ft/contact-page 71c30df] added changes on contact>team page
+ 1 file changed, 1 insertion(+)
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$  git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 734 bytes | 244.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/blaisetjoe/Bundle-1/pull/new/ft/contact-page
+remote:
+To https://github.com/blaisetjoe/Bundle-1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git status
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git add faq.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git commit -m "added faq page"
+[ft/faq-page 6c12c33] added faq page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 470 bytes | 156.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/blaisetjoe/Bundle-1/pull/new/ft/faq-page
+remote:
+To https://github.com/blaisetjoe/Bundle-1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by them: team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git add team.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert --continue
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git push
+Everything up-to-date
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert --continue
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git commit -m "revert"
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert d2bb99038a7c998a20b247c07fcaafdb23c11366
+CONFLICT (modify/delete): team.html deleted in parent of d2bb990 (added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert d2bb990... added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by them: team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git add team.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert --continue
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit d2bb990.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page|REVERTING)
+$ git revert --skip
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+nothing to commit, working tree clean
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git push
+Everything up-to-date
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$ git log
+commit 5076f6f9656b040ae3a2f066c0adf23120e9d015 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 10:16:53 2023 +0200
+
+    Revert "added team page"
+
+    This reverts commit d2bb99038a7c998a20b247c07fcaafdb23c11366.
+
+commit bac37f0a97619edb3b93b98527580936b38bcdc0
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 10:14:39 2023 +0200
+
+    Revert "added team page"
+
+    This reverts commit d2bb99038a7c998a20b247c07fcaafdb23c11366.
+
+commit 432f3d1c88ee200a179e1328ac881cd26d9ac8f2
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 10:13:51 2023 +0200
+
+    Revert "added team page"
+
+    This reverts commit d2bb99038a7c998a20b247c07fcaafdb23c11366.
+
+commit ba36a1a3e85abe183f14b02ede698ac6d5f6e18f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 10:13:19 2023 +0200
+
+    Revert "added team page"
+
+    This reverts commit d2bb99038a7c998a20b247c07fcaafdb23c11366.
+
+commit 4fa62724d5cc47cf570dfc58952058f6b086e73e
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 10:06:16 2023 +0200
+
+    Revert "added team page"
+
+    This reverts commit d2bb99038a7c998a20b247c07fcaafdb23c11366.
+
+commit 6c12c33ef910d86db13e787f3181abcca33bfc29
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 09:59:37 2023 +0200
+
+    added faq page
+
+commit 71c30dfbaf5a84b8f364c338629c8e17300929eb (origin/ft/contact-page, ft/contact-page)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 09:55:38 2023 +0200
+
+    added changes on contact>team page
+
+commit 4f249798f4dc36903409252269ed16ffbaf27bd3
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Tue May 16 09:40:46 2023 +0200
+
+    added team page
+
+commit f46e164294fe7b0c66eff7061a32c385977483f3 (origin/main, main)
+Merge: e6cb009 fa2819e
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:38:53 2023 +0200
+
+    Merge branch 'ft/service-redesign'
+
+commit e6cb009c515c62829a015038a6ff7ab484bb6b4f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:30:12 2023 +0200
+
+    added other changes to services
+
+commit fa2819ee422d5a4d39affefcd901cc20ad0b58d0 (origin/ft/service-redesign, ft/service-redesign)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:18:33 2023 +0200
+
+    added changes to services html
+
+commit 48f53360a97856da589ffd4598e88dcf2a736b4f
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 12:10:39 2023 +0200
+
+    added changes to services page
+
+commit db23dc055cc0a59c80e4345933603f5eed8cc410
+Merge: 62c4374 1f1d341
+Author: Annette <74765874+Annette-Bwemere-Salama@users.noreply.github.com>
+Date:   Mon May 15 12:00:53 2023 +0200
+
+    Merge pull request #1 from blaisetjoe/ft/bundle-2
+
+    added changes to project and created new
+
+commit 1f1d34183d34afbf718100989e922510845be860 (origin/ft/bundle-2, ft/bundle-2)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:53:23 2023 +0200
+
+    added changes at bundle-2 exercise-1
+
+commit 89133d819551ec15e36f60062766f42c6a61d5d3 (origin/dev, dev)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:34:30 2023 +0200
+
+    updated home and about pages
+
+commit 62c437434dec0621b0c74d24d31071f36a2ebc11
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:18:48 2023 +0200
+
+    added changes to readme
+ ESCOC
+
+
+
+ers.noreply.github.com>
+
+
+-2
+
+
+
+igin/ft/bundle-2, ft/bundle-2)
+>
+
+
+
+
+igin/dev, dev)
+>
+
+
+
+
+
+>
+
+
+
+ ESCOD
+
+commit db23dc055cc0a59c80e4345933603f5eed8cc410
+Merge: 62c4374 1f1d341
+Author: Annette <74765874+Annette-Bwemere-Salama@users.noreply.github.com>
+Date:   Mon May 15 12:00:53 2023 +0200
+
+    Merge pull request #1 from blaisetjoe/ft/bundle-2
+
+    added changes to project and created new
+
+commit 1f1d34183d34afbf718100989e922510845be860 (origin/ft/bundle-2, ft/bundle-2)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:53:23 2023 +0200
+
+    added changes at bundle-2 exercise-1
+
+commit 89133d819551ec15e36f60062766f42c6a61d5d3 (origin/dev, dev)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:34:30 2023 +0200
+
+    updated home and about pages
+
+commit 62c437434dec0621b0c74d24d31071f36a2ebc11
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:18:48 2023 +0200
+
+    added changes to readme
+ ESCOD
+
+commit db23dc055cc0a59c80e4345933603f5eed8cc410
+Merge: 62c4374 1f1d341
+Author: Annette <74765874+Annette-Bwemere-Salama@users.noreply.github.com>
+Date:   Mon May 15 12:00:53 2023 +0200
+
+    Merge pull request #1 from blaisetjoe/ft/bundle-2
+
+    added changes to project and created new
+
+commit 1f1d34183d34afbf718100989e922510845be860 (origin/ft/bundle-2, ft/bundle-2)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:53:23 2023 +0200
+
+    added changes at bundle-2 exercise-1
+
+commit 89133d819551ec15e36f60062766f42c6a61d5d3 (origin/dev, dev)
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:34:30 2023 +0200
+
+    updated home and about pages
+
+commit 62c437434dec0621b0c74d24d31071f36a2ebc11
+Author: Blaise Igiraneza <blaiseigiraneza@gmail.com>
+Date:   Mon May 15 10:18:48 2023 +0200
+
+    added changes to readme
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/Bundle-1 (ft/faq-page)
+$
+```
+

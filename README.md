@@ -1810,5 +1810,65 @@ pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe
 $
 ```
 
+## Bundle 6 
+
+### Exercise 1
+
+```bash
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (main)
+$ git checkout -b ft/exercise1
+Switched to a new branch 'ft/exercise1'
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (ft/exercise1)
+$ git status
+On branch ft/exercise1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (ft/exercise1)
+$ git add menu.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (ft/exercise1)
+$ git commit -m "create new menu page"
+[ft/exercise1 6569a72] create new menu page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 menu.html
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (ft/exercise1)
+$ git push
+fatal: The current branch ft/exercise1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/exercise1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (ft/exercise1)
+$ git push --set-upstream origin ft/exercise1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 474 bytes | 158.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/exercise1' on GitHub by visiting:
+remote:      https://github.com/blaisetjoe/git-cafe-exercise/pull/new/ft/exercise1
+remote:
+To https://github.com/blaisetjoe/git-cafe-exercise.git
+ * [new branch]      ft/exercise1 -> ft/exercise1
+branch 'ft/exercise1' set up to track 'origin/ft/exercise1'.
+
+pc@OPTIMUS-PRIME MINGW64 /d/LOCAL WEBSITES PROJECTS/THEGYM/GIT & GITHUB/git-cafe-exercise (ft/exercise1)
+$
+```
+
 
 
